@@ -1,0 +1,18 @@
+TM1637Display.cpp:11:1:TM1637_Display::TM1637_Display(GPIO_TypeDef*, uint16_t, GPIO_TypeDef*, uint16_t, TIM_HandleTypeDef*)	24	static
+TM1637Display.cpp:22:6:void TM1637_Display::display(uint8_t*)	24	static
+TM1637Display.cpp:31:6:void TM1637_Display::displayByte(uint8_t*)	24	static
+TM1637Display.cpp:40:6:void TM1637_Display::display(uint8_t, uint8_t)	24	static
+TM1637Display.cpp:47:6:void TM1637_Display::displayByte(uint8_t, uint8_t)	24	static
+TM1637Display.cpp:54:6:void TM1637_Display::displayByte(uint8_t, uint8_t, uint8_t, uint8_t)	24	static
+TM1637Display.cpp:60:6:void TM1637_Display::display(uint8_t, uint8_t, uint8_t, uint8_t)	24	static
+TM1637Display.cpp:66:6:void TM1637_Display::clear()	16	static
+TM1637Display.cpp:77:6:void TM1637_Display::brightness(uint8_t, uint8_t, uint8_t)	16	static
+TM1637Display.cpp:85:6:void TM1637_Display::point(bool)	16	static
+TM1637Display.cpp:93:6:void TM1637_Display::displayClock(uint8_t, uint8_t)	24	static
+TM1637Display.cpp:107:6:void TM1637_Display::displayInt(int16_t)	32	static
+TM1637Display.cpp:146:6:bool TM1637_Display::writeByte(uint8_t)	56	static
+TM1637Display.cpp:191:6:void TM1637_Display::sendByte(uint8_t, int8_t)	16	static
+TM1637Display.cpp:204:6:void TM1637_Display::sendArray(uint8_t*)	24	static
+TM1637Display.cpp:219:6:void TM1637_Display::update()	16	static
+TM1637Display.cpp:223:6:void TM1637_Display::start()	16	static
+TM1637Display.cpp:234:6:void TM1637_Display::stop()	16	static

@@ -1,0 +1,4 @@
+FlashPROM.cpp:14:6:void erase_flash()	16	static
+FlashPROM.cpp:32:10:uint32_t flash_search_adress(uint32_t, uint16_t)	24	static
+FlashPROM.cpp:52:6:void write_to_flash(myBuf_t*)	24	static
+FlashPROM.cpp:72:6:void read_last_data_in_flash(myBuf_t*)	24	static
