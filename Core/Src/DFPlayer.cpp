@@ -13,6 +13,7 @@ DFPlayer::DFPlayer(UART_HandleTypeDef *huart) {
 	HAL_Delay(200);
 	Send_cmd(0x06, 0x00, 1);
 	HAL_Delay(500);
+	timer = HAL_GetTick();
 }
 void DFPlayer::Send_cmd(uint8_t cmd, uint8_t Parameter1, uint8_t Parameter2) {
 	uint16_t Checksum = Version + Cmd_Len + cmd + Feedback + Parameter1
@@ -73,7 +74,7 @@ void DFPlayer::SetStatus() {
 	if (nowStatus == status) {
 		return;
 	} else {
-		switch (nowStatus) {
+		switch (status) {
 		case PAUSE:
 			Pause();
 			break;
@@ -89,5 +90,6 @@ void DFPlayer::SetStatus() {
 		default:
 			break;
 		}
+		nowStatus = status;
 	}
 }

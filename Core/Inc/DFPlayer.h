@@ -39,9 +39,9 @@ public:
 	PlayerStatus status = PAUSE;
 	uint8_t volumeSet;
 private:
-	uint8_t volumeNow;
+	uint8_t volumeNow = 0;
 	uint32_t timer = 0;
-	PlayerStatus nowStatus = PAUSE;
+	PlayerStatus nowStatus = RESETING;
 	UART_HandleTypeDef *huartDF;
 	void Send_cmd(uint8_t cmd, uint8_t Parameter1, uint8_t Parameter2);
 };
